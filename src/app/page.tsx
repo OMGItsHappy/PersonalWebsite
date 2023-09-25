@@ -10,7 +10,7 @@ import Skills from './Skills'
 
 export default function Home() {
   return (
-    <main className="overflow-auto">
+    <main className="overflow-auto pt-5 ">
       <AboutMe />
       <Education/>
       <Experience/>

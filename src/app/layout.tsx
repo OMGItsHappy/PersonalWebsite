@@ -26,7 +26,7 @@ export default function RootLayout({
       </head>
       <body>
         <header>
-          <nav>
+          <nav className='mt-1'>
             <div id="about-me" className='nav-section'>
               <Link href = "#AboutMe">About me</Link>
             </div>
@@ -36,8 +36,8 @@ export default function RootLayout({
             <div id="experience" className='nav-section'>
               <Link href="#Experience">Experience</Link>
             </div>
-            <div id= "proffessional-development" className='nav-section'>
-              <Link href="#Proffesional-Development"> Proffesional Development</Link>
+            <div id= "professional-development" className='nav-section'>
+              <Link href="#Professional-Development"> Professional Development</Link>
             </div>
             <div id = "projects" className='nav-section'>
             <Link href="#Projects">Projects</Link>
