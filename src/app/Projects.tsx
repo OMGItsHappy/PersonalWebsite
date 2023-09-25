@@ -2,6 +2,7 @@ export default function Projects() {
 
     return (
         <div id = "page">
+            <div id ="Projects"></div>
             <div id = "items">
             <div id = "page-header">
                 Projects

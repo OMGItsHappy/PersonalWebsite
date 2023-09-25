@@ -1,7 +1,7 @@
 export default function Education() {
     return (<>
     <div id = "page">
-        <a id = "education">
+        <div id = "Education"></div>
         <div id = "items" >
             <div id='page-header'>
                 <h1>Education</h1>
@@ -18,7 +18,6 @@ export default function Education() {
             - Dean&apos;s List Spring 2023
             </div>
         </div>
-        </a>
     </div>
     </>)
 }

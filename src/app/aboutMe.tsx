@@ -2,7 +2,8 @@
 export default function AboutMe() {
     return(<>
 
-        <div id="page">
+        <div id="page AboutMe">
+            <div id = "AboutMe"></div>
             <div id="name" className="flex justify-center align-middle pb-10">
                 <div id = "page-header">Oliver Schwab</div>
             </div>

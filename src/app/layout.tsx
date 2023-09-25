@@ -28,22 +28,22 @@ export default function RootLayout({
         <header>
           <nav>
             <div id="about-me" className='nav-section'>
-              <a href = "#About Me" rel='noopener' target='_blank'>About me</a>
+              <Link href = "#AboutMe">About me</Link>
             </div>
             <div id="education" className='nav-section'>
-            <a href = "#education" rel='noopener' target='_blank'>Education</a>
+              <Link href = "#Education">Education</Link>
             </div>
             <div id="experience" className='nav-section'>
-              Experince
+              <Link href="#Experience">Experience</Link>
             </div>
             <div id= "proffessional-development" className='nav-section'>
-              Proffesional Development
+              <Link href="#Proffesional-Development"> Proffesional Development</Link>
             </div>
             <div id = "projects" className='nav-section'>
-              Projects
+            <Link href="#Projects">Projects</Link>
             </div>
             <div id = "skills" className='nav-section'>
-              Skills
+            <Link href="#Skills">Skills</Link>
             </div>
           </nav>
         </header>
