@@ -66,3 +66,35 @@ h1, h2, h3, h4, h5, h6 {
   height: fit-content;
   @apply my-[20vh] flex w-full flex-col justify-center align-middle;
 }
+
+.FlexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 65%;
+  height: fit-content;
+  overflow: auto;
+  flex-direction: row;
+}
+
+.FlexContainer #progBar{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: transparent;
+  @apply flex ;
+  flex-grow: 1;
+
+}
+
+.FlexContainer :not(#progBar) {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: transparent;
+  @apply flex justify-center items-center;
+  flex-grow: 1;
+}
+

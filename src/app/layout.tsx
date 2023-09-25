@@ -2,6 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import './theme.css';
+import 'primereact/resources/primereact.min.css';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Test Page</title>
+        <title>Oliver Schwab</title>
+        <meta property='og:image' content='public\next.svg'></meta>
       </head>
       <body>
         <header>

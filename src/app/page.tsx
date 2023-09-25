@@ -5,6 +5,7 @@ import Education from './Education'
 import Experience from './Experience'
 import ProfessionalDevelopment from './ProfessionalDevelopment'
 import Projects from './Projects'
+import Skills from './Skills'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Experience/>
       <ProfessionalDevelopment/>
       <Projects/>
+      <Skills/>
     </main>
   )
 }

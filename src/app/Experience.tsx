@@ -1,3 +1,8 @@
+
+'use client'
+import { Button } from 'primereact/button';
+import { ProgressBar } from 'primereact/progressbar';
+
 export default function Experience() {
     return (
         <>
@@ -32,6 +37,7 @@ export default function Experience() {
                 - Reorganized and maintained network closets<br/>
                 - Responded to and fixed user problems<br/>
                 </div>
+
             </div>
         </div>
         </>
