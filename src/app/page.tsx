@@ -4,6 +4,8 @@ import AboutMe from './aboutMe'
 import Education from './Education'
 import Experience from './Experience'
 import ProfessionalDevelopment from './ProfessionalDevelopment'
+import Projects from './Projects'
+
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
       <Education/>
       <Experience/>
       <ProfessionalDevelopment/>
+      <Projects/>
     </main>
   )
 }
