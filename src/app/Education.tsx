@@ -14,8 +14,8 @@ export default function Education() {
             Expected Graduation <span id= "bold">December 2024</span>
             </div>
             <div id= "content">
-            - 3.5 GPA<br/>
-            - Dean&apos;s List Spring 2023
+            3.5 GPA<br/>
+            Dean&apos;s List Spring 2023
             </div>
         </div>
     </div>

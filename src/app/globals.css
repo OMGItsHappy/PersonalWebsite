@@ -8,8 +8,9 @@
   --background-end-rgb: 255, 255, 255;
   --bold: #f13223;
   --text:#E6DDD4;
-  --highlight:#FA6559;
+  --highlight:#fca29c;
   --background:#1b1b1b;
+  --header:#FA6559;
 }
 
 @layer base{
@@ -36,17 +37,17 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  @apply flex justify-center w-full text-center;
+  @apply flex justify-center text-center;
 }
 
 #page-header{
-  @apply text-6xl;
+  @apply text-6xl pb-10;
   color : var(--bold)
 }
 
 #header {
-  @apply text-4xl;
-  color : var(--bold)
+  @apply text-4xl pb-6;
+  color : var(--header)
 }
 
 #subheader {
@@ -56,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #content {
   color : var(--text);
+  @apply pb-10
 }
 
 #bold {
@@ -64,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #page {
   height: fit-content;
-  @apply my-[20vh] flex w-full flex-col justify-center align-middle;
+  @apply my-[10vh] flex flex-col justify-center align-middle;
 }
 
 .FlexContainer {
@@ -73,14 +75,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-  width: 65%;
+  width: 55%;
   height: fit-content;
   overflow: auto;
   flex-direction: row;
 }
 
 #progBar{
-  @apply !flex !justify-start items-center;
+  @apply !flex !justify-start items-center rounded-2xl;
 }
 
 .FlexContainer div {
@@ -92,3 +94,35 @@ h1, h2, h3, h4, h5, h6 {
   flex-grow: 1;
 }
 
+#skill-row{
+  @apply mb-3 rounded-2xl;
+  background-color: rgba(250, 101, 89, .15);
+}
+
+#skills-table{
+  @apply pt-5 w-fit;
+
+}
+
+.row-header {
+  @apply text-2xl border;
+  border-color: var(--bold);
+  background-color: #1b1b1b !important;
+}
+
+#footer {
+  height : 5vh;
+  background-color: rgba(250, 101, 89, .15);
+  width: 100%;
+  @apply m-1 rounded-md flex justify-center items-center space-x-5; 
+}
+
+#footer > div {
+  @apply border px-5 rounded-md;
+  background-color: var(--background);
+  border-color: var(--bold);
+}
+
+#footer > div > .underline{
+  text-decoration-color: var(--bold);
+}

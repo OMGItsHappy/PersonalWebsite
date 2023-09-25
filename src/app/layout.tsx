@@ -25,26 +25,16 @@ export default function RootLayout({
         <meta property='og:image' content='public\next.svg'></meta>
       </head>
       <body>
-        <header>
-          <nav className='mt-1'>
-            <div id="about-me" className='nav-section'>
-              <Link href = "#AboutMe">About me</Link>
-            </div>
-            <div id="education" className='nav-section'>
-              <Link href = "#Education">Education</Link>
-            </div>
-            <div id="experience" className='nav-section'>
-              <Link href="#Experience">Experience</Link>
-            </div>
-            <div id= "professional-development" className='nav-section'>
-              <Link href="#Professional-Development"> Professional Development</Link>
-            </div>
-            <div id = "projects" className='nav-section'>
-            <Link href="#Projects">Projects</Link>
-            </div>
-            <div id = "skills" className='nav-section'>
-            <Link href="#Skills">Skills</Link>
-            </div>
+        <header className='flex justify-center'>
+          <nav className=''>
+            <Link href = "#AboutMe" className='nav-section'>
+              About Me
+            </Link>
+            <Link href = "#Education" className='nav-section'>Education</Link>
+            <Link href="#Experience"  className='nav-section'>Experience</Link>
+            <Link href="#Professional-Development"  className='nav-section'>Professional Development</Link>
+            <Link href="#Projects"  className='nav-section'>Projects</Link>
+            <Link href="#Skills"  className='nav-section'>Skills</Link>
           </nav>
         </header>
       </body>
