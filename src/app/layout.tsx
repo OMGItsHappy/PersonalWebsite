@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import './theme.css';
 import 'primereact/resources/primereact.min.css';
+import './document.css'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,18 +28,21 @@ export default function RootLayout({
       <body>
         <header className='flex justify-center'>
           <nav className=''>
-            <Link href = "#AboutMe" className='nav-section'>
+            <Link href = "/#AboutMe" className='nav-section'>
               About Me
             </Link>
-            <Link href = "#Education" className='nav-section'>Education</Link>
-            <Link href="#Experience"  className='nav-section'>Experience</Link>
-            <Link href="#Professional-Development"  className='nav-section'>Professional Development</Link>
-            <Link href="#Projects"  className='nav-section'>Projects</Link>
-            <Link href="#Skills"  className='nav-section'>Skills</Link>
+            <Link href = "/#Education" className='nav-section'>Education</Link>
+            <Link href="/#Experience"  className='nav-section'>Experience</Link>
+            <Link href="/#Professional-Development"  className='nav-section'>Professional Development</Link>
+            <Link href="/#Projects"  className='nav-section'>Projects</Link>
+            <Link href="/#Skills"  className='nav-section'>Skills</Link>
           </nav>
         </header>
       </body>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+      
+      </body>
+      
     </html>
   )
 }

@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { Button } from "primereact/button";
+
 export default function Education() {
     return (<>
     <div id = "page">
@@ -15,7 +18,10 @@ export default function Education() {
             </div>
             <div id= "content">
             3.5 GPA<br/>
-            Dean&apos;s List Spring 2023
+            Dean&apos;s List Spring 2023<br></br>
+            <Link href = "/courses">
+                <Button className="mt-5 p-button-primary bg-transparent">Courses</Button>
+            </Link>
             </div>
         </div>
     </div>

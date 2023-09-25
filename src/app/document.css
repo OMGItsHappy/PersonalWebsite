@@ -39,6 +39,7 @@ nav > .nav-section {
     align-items: center;
     justify-content: center;
     flex-grow:1;
+    text-align: center;
     color : var(--text);
     @apply text-3xl;
 }

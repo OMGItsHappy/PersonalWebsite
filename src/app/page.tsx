@@ -22,16 +22,21 @@ export default function Home() {
       <Projects/>
       <Skills/>
 
+
+
       <div className='flex justify-center items-center'>
 
         <div id = 'footer'>
-          <div>
-            Hosted by <Link href = "https://vercel.com/" className='underline'>Vercel</Link>
-          </div>
-          <div>Code hosted on <Link 
-          href = 'https://github.com/OMGItsHappy/PersonalWebsite' 
-          className='underline'
-          id = "link">GitHub</Link></div>
+        <Link href = "https://vercel.com/" id = 'link'>
+            
+              Hosted by <span className='underline'>Vercel</span>
+            
+          </Link>
+          <Link 
+            href = 'https://github.com/OMGItsHappy/PersonalWebsite' 
+            id = "link">
+           Code hosted on <span className='underline'>GitHub</span>
+          </Link>
         </div>
 
       </div>

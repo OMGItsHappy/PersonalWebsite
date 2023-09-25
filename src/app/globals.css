@@ -117,12 +117,17 @@ h1, h2, h3, h4, h5, h6 {
   @apply m-1 rounded-md flex justify-center items-center space-x-5; 
 }
 
-#footer > div {
+#footer > #link {
   @apply border px-5 rounded-md;
   background-color: var(--background);
   border-color: var(--bold);
 }
 
-#footer > div > .underline{
+.underline{
   text-decoration-color: var(--bold);
+}
+
+img {
+  border-color: var(--bold);
+  @apply p-1;
 }
