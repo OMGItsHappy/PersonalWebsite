@@ -15,7 +15,7 @@ export default function Education() {
             </div>
             <div id= "content">
             - 3.5 GPA<br/>
-            - Dean's List Spring 2023
+            - Dean&apos;s List Spring 2023
             </div>
         </div>
         </a>

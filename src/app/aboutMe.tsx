@@ -13,8 +13,8 @@ export default function AboutMe() {
                 <div className="flex justify-center w-full text-center">
                     <div className="w-1/2">
                         As a Computer Science student interested in Data Engineering, 
-                        I've cultivated a versatile skill set and a knack for effective teamwork. 
-                        I'm known for delivering top-notch results for new and existing projects, adapting quickly to any situation, and thriving in dynamic environments.
+                        I&apos;ve cultivated a versatile skill set and a knack for effective teamwork. 
+                        I&apos;m known for delivering top-notch results for new and existing projects, adapting quickly to any situation, and thriving in dynamic environments.
                     </div>
                 </div>
             </div>
