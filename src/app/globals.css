@@ -79,19 +79,13 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
 }
 
-.FlexContainer #progBar{
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  background-color: transparent;
-  @apply flex ;
-  flex-grow: 1;
-
+#progBar{
+  @apply !flex !justify-start items-center;
 }
 
-.FlexContainer :not(#progBar) {
+.FlexContainer div {
   width: 100px;
-  height: 100px;
+  height: 50px;
   margin: 5px;
   background-color: transparent;
   @apply flex justify-center items-center;
