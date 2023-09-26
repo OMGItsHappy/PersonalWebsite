@@ -37,7 +37,7 @@ export default function Home() {
   }
 
   return (
-    <main id = 'main-page' className="overflow-auto pt-[20vh]" >
+    <main id = 'main-page' className="overflow-auto pt-[20vh] animate__animated animate__fadeInUp" >
       <div>
         <AboutMe />
         <Education/>
