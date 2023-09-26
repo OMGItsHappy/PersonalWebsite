@@ -21,7 +21,7 @@ export default function Projects() {
             Personal Website
             </div>
             <div id = "content">
-            Personal website running on Next.js. <br/>Utilized for testing both design and code concepts. Hosted at <Link href = "" className='underline'>oms.bio</Link>.
+            Personal website running on Next.js. <br/>Utilized for testing both design and code concepts. Hosted at <Link href = "" className='my-underline'>oms.bio</Link>.
             </div>
             <div id = "subheader">
                 Custom Keyboard

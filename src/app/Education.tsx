@@ -10,7 +10,7 @@ export default function Education() {
                 <h1>Education</h1>
             </div>
             <div id = "header">
-            South Dakota Mines
+            <a href = "https://www.sdsmt.edu/" className="my-underline">South Dakota Mines</a>
             </div>
             <div id = "subheader">
             B.S. Computer Science, Computational Statistics Minor<br></br>

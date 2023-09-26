@@ -123,8 +123,27 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--bold);
 }
 
-.underline{
-  text-decoration-color: var(--bold);
+.my-underline{
+  display: inline-block;
+  position: relative;
+}
+
+.my-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bold);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.my-underline:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
 }
 
 img {

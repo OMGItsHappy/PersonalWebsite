@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
       <body>
         <header className='flex justify-center'>
-          <nav className=''>
+          <nav className='navbar animate__animated animate__fadeInDown'>
             <Link href = "/#AboutMe" className='nav-section'>
               About Me
             </Link>
