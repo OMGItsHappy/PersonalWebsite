@@ -14,8 +14,9 @@ export default function Spinner({clickFunc, count}) {
             <div className='slider h-fit' >
                 {Array(count).fill(0).map(function(item, i){
                     return (
-                    <span style = {{'--i' : i}}>
+                    <span style = {{'--i' : i}} key = {i}>
                         <Image 
+                        key = {i}
                         src='/Keyboard.jpg' 
                         alt = '' 
                         width={200} 

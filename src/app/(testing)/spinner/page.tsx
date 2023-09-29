@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Spinner from "./Spinner.js";
 
-export default function page() {
+export default function Page() {
 
     const [selected, setSelected] = useState(0);
 
