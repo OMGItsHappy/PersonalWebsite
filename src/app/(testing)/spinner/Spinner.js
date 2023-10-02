@@ -19,8 +19,8 @@ export default function Spinner({clickFunc, count}) {
                         key = {i}
                         src='/Keyboard.jpg' 
                         alt = '' 
-                        width={200} 
-                        height={200}
+                        width = {3260/10}
+                        height = {2293/10}
                         onClick={() => clickFunc(i)}/>
                     </span>)
                 })

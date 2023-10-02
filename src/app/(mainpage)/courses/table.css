@@ -5,3 +5,7 @@
 .p-datatable {
     @apply !rounded-2xl;
 }
+
+.custom-datatable table {
+    border-radius: 10px;
+  }

@@ -1,6 +1,8 @@
 'use client'
 import { useState } from "react";
 import Spinner from "./Spinner.js";
+import AboutMe from "../../\(mainpage\)/aboutMe";
+import Skills from "../../(mainpage)/Skills";
 
 export default function Page() {
 
@@ -10,6 +12,8 @@ export default function Page() {
         setSelected(clickId);
     }
 
+    const projects = ["Homelab", 'Keyboard', "Longboard", "Website"]
+
     return (
         <>
         <div className="h-20vh overflow-hidden">
@@ -17,8 +21,8 @@ export default function Page() {
             clickFunc = {logClick}
             count = {8}/>
         </div>
-        <div className="h-[50vh] bg-blue-800" onClick={() => logClick("1")}>
-            {selected}
+        <div className="h-[50vh] bg-blue-800">
+            {selected == 0 ? <AboutMe/> : <Skills/>}
         </div>
         
         </>

@@ -58,3 +58,13 @@ a {
     text-decoration: none;
 }
 
+.animate-out{
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.animate-in{
+    max-height: 30vh;
+    transition: max-height 0.5s ease-in-out;
+}
+

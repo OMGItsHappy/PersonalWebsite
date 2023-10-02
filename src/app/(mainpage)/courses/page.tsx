@@ -160,10 +160,10 @@ CSC	463	SDSMT SD School of Mines	Capstone Design I
         }
     ]
 
-return (<div className='overflow-auto'>
+return (<div className='overflow-auto' id = "course-table">
 
-    <div className='m-5 rounded-2xl'>
-        <DataTable value = {Courses} stripedRows={true}>
+    <div className='m-5 rounded-2xl flex justify-center'>
+        <DataTable value = {Courses} stripedRows={true} tableStyle={{maxWidth:"60vw"}} className='custom-datatable'>
             <Column field='Course Type' header='Course Type' />
             <Column field='Number' header='Course Number' />
             <Column field='Course Name' header='Course Name' />

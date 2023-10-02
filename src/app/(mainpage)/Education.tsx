@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { Button } from "primereact/button";
+import Courses from "./courses/page";
+import { useState } from "react";
 
 export default function Education() {
+
+    const [showCourses, setShowCourses] = useState(false);
+
     return (<>
     <div id = "page">
         <div id = "Education"></div>
@@ -19,9 +24,15 @@ export default function Education() {
             <div id= "content">
             3.5 GPA<br/>
             Dean&apos;s List Spring 2023<br></br>
-            <Link href = "/courses">
-                <Button className="mt-5 p-button-primary bg-transparent">Courses</Button>
-            </Link>
+
+            <div className={(showCourses 
+                ? "animate__animated animate__zoomIn animate-in" 
+                : 'animate__animated animate__zoomOut animate-out') 
+                + " overflow-auto no-scrollbar rounded-lg"}
+                id = "animate-out">
+                <Courses></Courses>
+            </div>
+            <Button className="mt-5 p-button-primary bg-transparent" onClick={() => setShowCourses(!showCourses)}>Courses</Button>
             </div>
         </div>
     </div>
