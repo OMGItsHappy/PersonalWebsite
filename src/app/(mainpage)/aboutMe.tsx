@@ -4,7 +4,7 @@ export default function AboutMe() {
     
     return(<>
 
-        <div id="pagee">
+        <div id="page">
             <div id = "AboutMe"></div>
             <div id="items">
                 <div id = "page-header">Oliver Schwab</div>

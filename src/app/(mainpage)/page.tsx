@@ -11,40 +11,26 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import 'animate.css';
 import Spinner from '../(testing)/spinner/Spinner'
+import { RandomAnimation } from './Helpers'
 
 
 
 export default function Home() {
 
-  let [scroll, setScroll] = useState(0)
-  let [time, setTime] = useState(Date.now())
-
-  function handleScroll(event: React.UIEvent<EventTarget>) { 
-    const target = event.currentTarget as HTMLDivElement;
-
-    if (target.scrollTop > scroll && Date.now() - time > 50) {
-      document.getElementsByClassName("navbar")[0].classList.add("hidden")
-      
-      setTime(Date.now())
-      console.log("hidden")
-    }
-     else if (target.scrollTop < scroll && Date.now() - time > 500) {
-      document.getElementsByClassName("navbar")[0].classList.remove("hidden")
-      setTime(Date.now())
-     }
-      
-
-    setScroll(scroll => target.scrollTop);
-  }
-
   return (
     <main id = 'main-page' className="overflow-auto pt-[20vh] animate__animated animate__fadeInUp" >
       <div>
-        <AboutMe />
-        <Education/>
-        <Experience/>
-        <ProfessionalDevelopment/>
-        <Projects/>
+        
+        
+
+        <RandomAnimation>
+          <AboutMe/>
+          <Education/>
+          <Experience/>
+          <ProfessionalDevelopment/>
+          <Projects/>
+        </RandomAnimation>
+
         <Skills/>
 
 
@@ -69,3 +55,27 @@ export default function Home() {
     </main>
   )
 }
+
+
+/*
+  let [scroll, setScroll] = useState(0)
+  let [time, setTime] = useState(Date.now())
+
+  function handleScroll(event: React.UIEvent<EventTarget>) { 
+    const target = event.currentTarget as HTMLDivElement;
+
+    if (target.scrollTop > scroll && Date.now() - time > 50) {
+      document.getElementsByClassName("navbar")[0].classList.add("hidden")
+      
+      setTime(Date.now())
+      console.log("hidden")
+    }
+     else if (target.scrollTop < scroll && Date.now() - time > 500) {
+      document.getElementsByClassName("navbar")[0].classList.remove("hidden")
+      setTime(Date.now())
+     }
+      
+
+    setScroll(scroll => target.scrollTop);
+  }
+  */
