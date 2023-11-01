@@ -12,6 +12,7 @@ import Link from 'next/link'
 import 'animate.css';
 import Spinner from '../(testing)/spinner/Spinner'
 import { RandomAnimation } from './Helpers'
+import ReachOutToMe from './reachOutToMe'
 
 
 
@@ -42,7 +43,6 @@ export default function Home({params} : {params : {name : string}}) {
     >
       <div>
         
-        
         {params.name}
         <RandomAnimation>
           <AboutMe/>
@@ -50,6 +50,7 @@ export default function Home({params} : {params : {name : string}}) {
           <Experience/>
           <ProfessionalDevelopment/>
           <Projects/>
+          <ReachOutToMe/>
         </RandomAnimation>
 
         <Skills/>
@@ -76,27 +77,3 @@ export default function Home({params} : {params : {name : string}}) {
     </main>
   )
 }
-
-
-/*
-  let [scroll, setScroll] = useState(0)
-  let [time, setTime] = useState(Date.now())
-
-  function handleScroll(event: React.UIEvent<EventTarget>) { 
-    const target = event.currentTarget as HTMLDivElement;
-
-    if (target.scrollTop > scroll && Date.now() - time > 50) {
-      document.getElementsByClassName("navbar")[0].classList.add("hidden")
-      
-      setTime(Date.now())
-      console.log("hidden")
-    }
-     else if (target.scrollTop < scroll && Date.now() - time > 500) {
-      document.getElementsByClassName("navbar")[0].classList.remove("hidden")
-      setTime(Date.now())
-     }
-      
-
-    setScroll(scroll => target.scrollTop);
-  }
-  */
