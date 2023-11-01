@@ -1,0 +1,10 @@
+{
+    "folder-path-color.folders": [
+        {"path" : "src/app/(mainpage)/courses", "color" : "red"},
+        {"path" : "src/app/(mainpage)", "color" : "green"},
+        {"path" : "/src/app/(testing)/spinner/projects", "color" : "blue"},
+        {"path" : "/src/app/(testing)/spinner", "color" : "red"},
+        {"path" : "/src/app/(testing)", "color" : "yellow"},
+        {"path" : "/src/app", "color" : "magenta"},
+    ]
+}
