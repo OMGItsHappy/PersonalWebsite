@@ -24,7 +24,7 @@ export default function RootLayout({
         <meta property='og:image' content='public\next.svg'></meta>
       </head>
       <body>
-        <header className='flex justify-center'>
+        <header className='flex justify-center h-[15%]'>
           <nav className='navbar animate__animated animate__fadeInDown'>
             <Link href = "/#AboutMe" className='nav-section'>
               About Me

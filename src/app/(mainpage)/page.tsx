@@ -69,7 +69,7 @@ export default function Home({params} : {params : {name : string}}) {
               id = "link">
             Code hosted on <span className='my-underline'>GitHub</span>
             </Link>
-            <Link href='mailto: oliver@oms.bio' id = "link"><span className ='my-underline'>Contact Me!</span></Link>
+            <Link href='mailto: oliverschwab03@gmail.com' id = "link"><span className ='my-underline'>Contact Me!</span></Link>
           </div>
 
         </div>
