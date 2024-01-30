@@ -163,7 +163,7 @@ CSC	463	SDSMT SD School of Mines	Capstone Design I
 return (<div className='overflow-auto'>
 
     <div className='m-5 rounded-2xl'>
-        <DataTable value = {Courses} stripedRows={true}>
+        <DataTable value = {Courses} stripedRows={true} tableStyle={{height:"50%"}}>
             <Column field='Course Type' header='Course Type' />
             <Column field='Number' header='Course Number' />
             <Column field='Course Name' header='Course Name' />

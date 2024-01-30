@@ -1,18 +1,18 @@
 'use client'
 import Image from 'next/image'
 import "./document.css"
-import AboutMe from './aboutMe'
-import Education from './Education'
-import Experience from './Experience'
-import ProfessionalDevelopment from './ProfessionalDevelopment'
-import Projects from './Projects'
-import Skills from './Skills'
+import AboutMe from './MainPageSections/aboutMe'
+import Education from './MainPageSections/Education'
+import Experience from './MainPageSections/Experience'
+import ProfessionalDevelopment from './MainPageSections/ProfessionalDevelopment'
+import Projects from './MainPageSections/Projects'
+import Skills from './MainPageSections/Skills'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import 'animate.css';
 import Spinner from '../(testing)/spinner/Spinner'
 import { RandomAnimation } from './Helpers'
-import ReachOutToMe from './reachOutToMe'
+import SeeMyWork from './MainPageSections/SeeMyWork'
 
 
 
@@ -50,7 +50,7 @@ export default function Home({params} : {params : {name : string}}) {
           <Experience/>
           <ProfessionalDevelopment/>
           <Projects/>
-          <ReachOutToMe/>
+          <SeeMyWork/>
         </RandomAnimation>
 
         <Skills/>

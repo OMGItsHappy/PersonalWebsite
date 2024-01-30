@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "primereact/button";
-import Courses from "./courses/page";
+import Courses from "../courses/page";
 import { useState } from "react";
 
 export default function Education() {
@@ -29,7 +29,8 @@ export default function Education() {
                 ? "animate__animated animate__zoomIn animate-in" 
                 : 'animate__animated animate__zoomOut animate-out') 
                 + " overflow-auto no-scrollbar rounded-lg"}
-                id = "animate-out">
+                id = "animate-out"
+                style={{height:"30%"}}>
                 <Courses></Courses>
             </div>
             <Button className="mt-5 p-button-primary bg-transparent" onClick={() => setShowCourses(!showCourses)}>Courses</Button>

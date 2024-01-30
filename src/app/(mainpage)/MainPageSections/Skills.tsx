@@ -64,7 +64,8 @@ export default function Skills() {
         ["JavaScript", 60, "1 Year"],
         ["Next.Js", 50, "6 Months"],
         ['Linux', 50, "3 Years"],
-        ['Docker', 40, "6 Months"]
+        ['Docker', 40, "6 Months"],
+        ["Go", 20, "1 Month"]
                     ].map(function(element) {
                         black = !black;
                             return (
