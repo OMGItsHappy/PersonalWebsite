@@ -1,8 +1,8 @@
 'use client'
 import { useState } from "react";
 import Spinner from "./Spinner.js";
-import AboutMe from "../../(mainpage)/MainPageSections/aboutMe.jsx";
-import Skills from "../../(mainpage)/MainPageSections/Skills.jsx";
+import AboutMe from "src/app/(mainpage)/MainPageSections/aboutMe.tsx";
+import Skills from "src/app/(mainpage)/MainPageSections/Skills.tsx";
 
 export default function Page() {
 
