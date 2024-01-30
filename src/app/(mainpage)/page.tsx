@@ -10,7 +10,6 @@ import Skills from './MainPageSections/Skills'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import 'animate.css';
-import Spinner from '../(testing)/spinner/Spinner'
 import { RandomAnimation } from './Helpers'
 import SeeMyWork from './MainPageSections/SeeMyWork'
 
